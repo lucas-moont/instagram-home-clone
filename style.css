@@ -6,6 +6,10 @@
     font-size: 14px;
 }
 
+br {
+    display: none;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -33,7 +37,7 @@ body {
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 47rem;
 }
 
 .continue {
@@ -41,8 +45,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 40px;
     width: 50%;
-    height: 34rem;
+    height: 36rem;
     align-self: center;
 }
 
@@ -58,7 +63,7 @@ body {
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;
+    min-height: 19rem;  
 }
 
 .group img {
@@ -75,5 +80,121 @@ body {
 }
 
 .profile-pic img{
-    height: 10rem;
+    height: 7rem;
+}
+
+.instagram-login {
+    background-color: #0095F6;
+    color: #FFF;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+
+.instagram-logout {
+    color: #0095F6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160)
+}
+
+.link-blue {
+    color: #0095F6;
+}
+
+.get-the-appy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.get-app {
+    text-align: center;
+}
+
+.app-download {
+    height: 4rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('img/kisspng-app-store-apple-iphone-grand-mercure-mysuru-5b04f9d978c4b8.2372208115270527614947.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('img/googleplaylogo.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wraper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        background-color: #FFF;
+    }
+
+    .continue {
+        margin-top: 0;
+    }
+
+    .instagram-wraper {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        height: 120px;
+        width: 100px;
+    }
+
+    .profile-pic img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .group{
+        border: 1px solid transparent ;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .instagram-login{
+        text-align: center;
+    }
+
+    .link-blue{
+        min-width: 100%;
+    }
+
+    br {
+        display: inline;
+    }
+
+    .not-account{
+        text-align: center;
+    }
 }
